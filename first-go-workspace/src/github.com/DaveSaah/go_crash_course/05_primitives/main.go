@@ -3,15 +3,12 @@ package main
 import "fmt"
 
 func main() {
-    var isTrue = true
-    var isFalse = false
-    fmt.Println(isTrue)
-    fmt.Println(isFalse)
-    fmt.Println(1 == 1)
+    a := 10
+    b := 3
 
-    var isWhat string
-    fmt.Println(isWhat)
-
-    var num uint = 2
-    fmt.Println(num)
+    fmt.Println(a + b)
+    fmt.Println(a - b)
+    fmt.Println(a * b)
+    fmt.Println(10.0 / 3)
+    fmt.Println(a % b)
 }

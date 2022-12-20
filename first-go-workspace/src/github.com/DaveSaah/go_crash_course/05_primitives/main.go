@@ -3,12 +3,5 @@ package main
 import "fmt"
 
 func main() {
-    a := 10
-    b := 3
-
-    fmt.Println(a + b)
-    fmt.Println(a - b)
-    fmt.Println(a * b)
-    fmt.Println(10.0 / 3)
-    fmt.Println(a % b)
+    fmt.Println(2.1e4)
 }

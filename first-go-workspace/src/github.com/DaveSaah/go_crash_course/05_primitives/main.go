@@ -3,16 +3,15 @@ package main
 import "fmt"
 
 func main() {
-    var comp complex64 = 1 + 10i
-    fmt.Println(comp + comp)
-    fmt.Println(comp - comp)
-    fmt.Println(comp * comp)
-    fmt.Println(comp / comp)
+    var name string = "DaveSaah"
+    fmt.Println("I am", name)
+    fmt.Printf("%v, %T\n", name[2], name[2])
+    fmt.Printf("%v, %T\n", string(name[2]), name[2])
 
-    // To get the complex and imaginary parts separately
-    fmt.Println(real(comp), imag(comp))
+    // string concatenation
+    fmt.Println(name + name)
 
-    // Create a complex number using the complex function
-    comp1 := complex(2, 3)
-    fmt.Println(comp1)
+    // strings can be represented as a collection of bytes
+    bytes := []byte(name)
+    fmt.Println(bytes)
 }

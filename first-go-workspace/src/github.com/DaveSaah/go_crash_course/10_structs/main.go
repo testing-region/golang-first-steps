@@ -21,5 +21,7 @@ func main() {
 	},
     }
 
-    fmt.Println(person1)
+    fmt.Println(person1.name)
+    fmt.Println(person1.age)
+    fmt.Println(person1.siblings)
 }

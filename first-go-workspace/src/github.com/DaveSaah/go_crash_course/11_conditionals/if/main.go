@@ -3,17 +3,16 @@ package main
 import "fmt"
 
 func main() {
-    if true {
-	fmt.Println("This is true")
+    number := 50
+    guess := 80
+
+    if guess < number {
+	fmt.Println("Too low")
+    } else if guess == number {
+	fmt.Println("You got it right")
+    } else {
+	fmt.Println("Too high")
     }
 
-    populations := map[string]int {
-	"Ghana": 23,
-	"Uganda": 33,
-	"Senegal": 55,
-    }
-
-    if pop, ok := populations["Ghana"]; ok {
-	fmt.Println("The population of Ghana is", pop)
-    }
+    fmt.Println(!true)
 }

@@ -14,5 +14,4 @@ func main() {
 	fmt.Println("Too high")
     }
 
-    fmt.Println(!true)
 }

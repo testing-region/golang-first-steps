@@ -2,9 +2,16 @@ package main
 
 import "fmt"
 
+type myStruct struct {
+    some int
+}
+
 func main() {
-    var a int = 42
-    var b *int = &a
-    a = 23
-    fmt.Println(a, *b)
+    var ms *myStruct = &myStruct{some: 42}
+    fmt.Println(ms)
+
+    var ms2 *myStruct = new(myStruct)
+    fmt.Println(ms2)
+    ms2.some = 42
+    fmt.Println(ms2.some)
 }
